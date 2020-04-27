@@ -4,6 +4,10 @@
     height: 25px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* The Modal (background) */
 
@@ -4344,7 +4348,7 @@ hr {
     background: #070b11;
     position: relative;
     overflow: hidden;
-    max-height: 50px;
+    max-height: 180px;
 }
 
 .footer-area::after {

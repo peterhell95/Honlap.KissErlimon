@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="zxx" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,6 @@
     <title>Erlimon Kft.</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- CSS here -->
@@ -48,7 +47,7 @@
                                     <ul>
                                         <li>+(36) 70-395-4147</li>
                                         <li>peterhell95@jolenne.hu</li>
-                                        <li>Hétfő - Sat 8:00 - 17:30, Vasárnap - Zárva</li>
+                                        <li>Hétfő - Szombat 8:00 - 17:30, Vasárnap - Zárva</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -75,7 +74,7 @@
                                     <a href="index.html" class="small-logo"><img src="assets/img/logo/loder-logo.png" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
+                            <div id="nav-main" class="col-xl-8 col-lg-8 col-md-8">
                                 <!-- Main-menu -->
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
@@ -137,7 +136,7 @@
                                         <h2>Erlimon</h2>
                                     </div>
                                     <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
-                                        <span><a  href="services.html">A mi szolgáltatásink</a></span>
+                                        <span><a  href="#services">A mi szolgáltatásink</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -631,7 +630,7 @@
             </div>
         </div> -->
         <!--latest News Area End -->
-        <section class="page-section" id="contact">
+        <div id="contact">
             <div class="slider-area ">
                 <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/about.jpg">
                     <div class="container">
@@ -660,27 +659,27 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Tárgy'" placeholder=" Tárgy" required>
+                                        <input class="form-control" name="subject" id="subject" type="text" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Tárgy'" placeholder=" Tárgy">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg a nevét!'" placeholder=" Adja meg a nevét!" required>
+                                        <input class="form-control valid" name="name" id="name" type="text" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg a nevét!'" placeholder=" Adja meg a nevét!">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg az Email címét!'" placeholder="Adja meg az Email címét!" required>
+                                        <input class="form-control valid" name="email" id="email" type="email" required="required" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg az Email címét!'" placeholder="Adja meg az Email címét!">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" required="required" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Ide írja az elképzelését!'" placeholder=" Ide írja az elképzelését!" required></textarea>
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" required="required" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Ide írja az elképzelését!'" placeholder=" Ide írja az elképzelését!"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button type="button" value="Submit" id="btnsubmit" onclick="submitForm()" required="required" class="button button-contactForm boxed-btn">Küldés</button>
+                                <button type="button" value="Submit" id="btnsubmit" required="required" class="button button-contactForm boxed-btn">Küldés</button>
                             </div>
                         </form>
                     </div>
@@ -709,7 +708,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <!-- Footer Start-->
@@ -835,7 +834,7 @@
     <script src="./assets/js/jquery.sticky.js"></script>
 
     <!-- counter , waypoint -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>-->
     <script src="./assets/js/jquery.counterup.min.js"></script>
 
     <!-- contact js -->
@@ -862,22 +861,22 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Tárgy'" placeholder=" Tárgy" required>
+                                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Tárgy'" placeholder=" Tárgy">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg a nevét!'" placeholder=" Adja meg a nevét!" required>
+                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg a nevét!'" placeholder=" Adja meg a nevét!">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg az Email címét!'" placeholder="Adja meg az Email címét!" required>
+                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Adja meg az Email címét!'" placeholder="Adja meg az Email címét!">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Ide írja az elképzelését!'" placeholder=" Ide írja az elképzelését!" required></textarea>
+                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Ide írja az elképzelését!'" placeholder=" Ide írja az elképzelését!"></textarea>
                             </div>
                         </div>
                     </div>
@@ -898,7 +897,8 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-        var button = document.getElementById("btnsubmit2");
+        var button2 = document.getElementById("btnsubmit2");
+        var button = document.getElementById("btnsubmit");
 
 
         // When the user clicks on the button, open the modal
@@ -910,12 +910,16 @@
         span.onclick = function() {
             modal.style.display = "none";
         }
-        button.onclick = function() {
+        button2.onclick = function() {
             var frm = document.getElementsByName('contact-form2')[0];
             var a = document.forms["contact-form2"]["name"].value;
             var b = document.forms["contact-form2"]["subject"].value;
             var c = document.forms["contact-form2"]["email"].value;
             var d = document.forms["contact-form2"]["message"].value;
+            if (a == null || a == "" && b == null || b == "") {
+                alert("Kérem töltse ki az összes mezőt!");
+                return false;
+            }
             if (a == null || a == "") {
                 alert("Kérem töltse ki az összes mezőt!");
                 return false;
@@ -946,7 +950,7 @@
             }
         }
 
-        function submitForm() {
+        button.onclick = function() {
             // Get the first form with the name
             // Usually the form name is not repeated
             // but duplicate names are possible in HTML
@@ -956,6 +960,10 @@
             var b = document.forms["contact-form"]["subject"].value;
             var c = document.forms["contact-form"]["email"].value;
             var d = document.forms["contact-form"]["message"].value;
+            if (a == null || a == "" && b == null || b == "") {
+                alert("Kérem töltse ki az összes mezőt!");
+                return false;
+            }
             if (a == null || a == "") {
                 alert("Kérem töltse ki az összes mezőt!");
                 return false;
@@ -977,6 +985,12 @@
             alert("Az üzenetet sikeresen elküldte!");
             return false; // Prevent page refresh
         }
+        $(document).ready(function() {
+            //close menu on lost focus
+            $('.slicknav_menu').focusout(function(event) {
+                $('#navigation').slicknav('close'); //Here 'menu' is the id of ul.
+            });
+        });
     </script>
 
 </body>
